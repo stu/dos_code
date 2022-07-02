@@ -1,0 +1,9 @@
+SBDSP Info
+Displays the DSP info of your Sound Blaster.
+Good for batch files.
+
+use -major and -minor to return the dsp info as
+error codes for batch file.
+
+see test.bat for examples
+
