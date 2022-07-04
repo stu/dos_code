@@ -7,6 +7,10 @@ This is a random assortment of my old pieces of MSDOS code, some newer but all o
 ## Dram Check
 > Dumps the DDR info from the VIA VT82C496G chipset
 
+## E820
+> Fake E820 bios hook if your bios doesnt have E820 functionality.
+> Also an E820 list dumper..
+
 ## InfoD32
 > Prints DOS32 executable information, all version 3.0 - 3.5
 
