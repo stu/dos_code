@@ -1,8 +1,14 @@
 # Old MSDOS code stuff
 This is a random assortment of my old pieces of MSDOS code, some newer but all of it for DOS. Some of it reworked from TASM and such into NASM and C code tested against newer OpenWatcom v2 compiler.
 
+## D - Directory Lister
+> DIR command for a coloured lister. Configurable etc.
+
 ## Dram Check
 > Dumps the DDR info from the VIA VT82C496G chipset
+
+## InfoD32
+> Prints DOS32 executable information, all version 3.0 - 3.5
 
 ## SBDSP
 > Pulls the SoundBlaster DSP, major/minor versions and the DSP string.
@@ -13,7 +19,7 @@ This is a random assortment of my old pieces of MSDOS code, some newer but all o
 ---
 
 # License
-I consider this old junk, and of no intrinsic value. 
+I consider this old junk, and of no intrinsic value.
 Consider everything in this repo unless stated otherwise, to be under the BSD 3 clause
 
 ## BSD 3-Clause License

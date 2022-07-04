@@ -1,0 +1,40 @@
+#
+# Makefile for Watcom C/C++ 10.6
+#
+
+cc = wcc386
+debug = all
+cflags = -3r -fp3 -zp4 -oneatx -d2
+lflags = option quiet
+sys = wdosx
+stack_size = 512k
+
+all: d.exe
+
+d.exe: d.obj dlist.obj
+	echo system  $(sys)>test.lnk
+	echo $(lflags)>>test.lnk
+	rem echo option stack=$(stack_size)>>test.lnk
+	rem echo option debug watcom all
+	echo name d.exe>>test.lnk
+	echo file d, dlist>>test.lnk
+	wlink @test.lnk
+	pmwlite /4 d.exe
+	#rem 32lite d.exe
+	#stubit d.exe
+	@if exist d.exe sauce -preset d -date 20161215 -i d.exe -o d.x
+	@if exist d.exe del d.exe
+	@if exist d.x ren d.x d.exe
+
+clean: .symbolic
+	@if exist main @del main
+	@if exist *.obj @del *.obj
+	@if exist *.bak @del *.bak
+	@if exist *.sym @del *.sym
+	@if exist d.exe @del d.exe
+
+.after
+	@if exist test.lnk @del test.lnk
+
+.c.obj : .AUTODEPEND
+	$(cc) $(cflags) $^&
