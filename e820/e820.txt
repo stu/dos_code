@@ -1,0 +1,5 @@
+This is a fake E820 bios extended memory map driver
+really onlu good for develpment stuff if your bios
+is really old and does not support E820.
+
+Throws in some fake ACPI blocks so it looks normal.

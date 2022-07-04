@@ -1,0 +1,1 @@
+Dumps the E820 memory tables if your BIOS supports them.
