@@ -1,12 +1,22 @@
-# dos_code
-Old MSDOS code stuff
+# Old MSDOS code stuff
+This is a random assortment of my old pieces of MSDOS code, some newer but all of it for DOS. Some of it reworked from TASM and such into NASM and C code tested against newer OpenWatcom v2 compiler.
+
+## Dram Check
+> Dumps the DDR info from the VIA VT82C496G chipset
+
+## SBDSP
+> Pulls the SoundBlaster DSP, major/minor versions and the DSP string.
+
+## TSR Skeleton
+> A small NASM stub I use for all my TSR's. Will load itself as high into UMB if possible, etc. Takes care of all the memory checking/dos verion tests for umb's etc, detaching etc
+
+---
 
 # License
 I consider this old junk, and of no intrinsic value. 
 Consider everything in this repo unless stated otherwise, to be under the BSD 3 clause
 
-
-# BSD 3-Clause License
+## BSD 3-Clause License
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
