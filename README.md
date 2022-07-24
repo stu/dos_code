@@ -19,6 +19,10 @@ Mostly, its old and just recompiled against OWv2.
 ## Once
 > Use in your autoexec.bat to run something once per day
 
+## RDFL
+> RDF Loader. Posted this to usenet back in the day... looong time ago.
+> Lets you build an RDF like a COM and boostrap it with a tiny COM loader.
+
 ## SBDSP
 > Pulls the SoundBlaster DSP, major/minor versions and the DSP string.
 
