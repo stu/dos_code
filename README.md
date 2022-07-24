@@ -1,5 +1,7 @@
 # Old MSDOS code stuff
-This is a random assortment of my old pieces of MSDOS code, some newer but all of it for DOS. Some of it reworked from TASM and such into NASM and C code tested against newer OpenWatcom v2 compiler.
+This is a random assortment of my old pieces of MSDOS code, some newer but all of it for DOS.
+Some of it reworked from TASM and such into NASM and C code tested against newer OpenWatcom v2 compiler.
+Mostly, its old and just recompiled against OWv2.
 
 ## D - Directory Lister
 > DIR command for a coloured lister. Configurable etc.
@@ -16,6 +18,10 @@ This is a random assortment of my old pieces of MSDOS code, some newer but all o
 
 ## SBDSP
 > Pulls the SoundBlaster DSP, major/minor versions and the DSP string.
+
+## SCInfo
+> Prints sound card info from environment variables.
+> Supports SB, GUS, WSS, Adlib Gold
 
 ## TSR Skeleton
 > A small NASM stub I use for all my TSR's. Will load itself as high into UMB if possible, etc. Takes care of all the memory checking/dos verion tests for umb's etc, detaching etc
