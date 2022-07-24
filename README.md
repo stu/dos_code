@@ -16,6 +16,9 @@ Mostly, its old and just recompiled against OWv2.
 ## InfoD32
 > Prints DOS32 executable information, all version 3.0 - 3.5
 
+## Once
+> Use in your autoexec.bat to run something once per day
+
 ## SBDSP
 > Pulls the SoundBlaster DSP, major/minor versions and the DSP string.
 
